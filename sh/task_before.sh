@@ -235,7 +235,7 @@ combine_sub() {
     echo $combined_all | perl -pe "{s|^&||; s|^@+||; s|&@|&|g; s|@+&|&|g; s|@+|@|g; s|@+$||}"
 }
 
-## 正常依次运行时，组合互助码格式化为全局变量
+## 正常依次运行时，组合互助码格式化为全局变量（faker2）
 combine_all() {
     for ((i = 0; i < ${#env_name[*]}; i++)); do
         result=$(combine_sub ${var_name[i]})
