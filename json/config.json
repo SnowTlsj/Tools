@@ -1,0 +1,74 @@
+{
+  "Index": {
+    "Logo": "img/logo.png",
+    "Favicon": "img/favicon.ico",
+    "Title": "小呱呱～"
+  },
+  "SoftWare": {
+    "port": "8100",
+    "password": ""
+  },
+  "Data": [
+    {
+      "id": 1,
+      "title": "QQBot",
+      "ico": "https://s3.bmp.ovh/imgs/2021/12/51021410375519ac.jpg",
+      "w_link": "#",
+      "n_link": "#"
+    },
+   {
+      "id": 2,
+      "title": "xdd",
+      "ico": "https://s3.bmp.ovh/imgs/2021/12/610680d78eae9769.jpg",
+      "w_link": "#",
+      "n_link": "#"
+    },
+   {
+      "id": 3,
+      "title": "Nvjdc",
+      "ico": "https://s3.bmp.ovh/imgs/2021/12/36c3c96e3d15a72a.png",
+      "w_link": "#",
+      "n_link": "#"
+    },
+    {
+      "id": 4,
+      "title": "青龙1",
+      "ico": "https://s3.bmp.ovh/imgs/2021/08/ae0de7ea9013085e.png",
+      "w_link": "#",
+      "n_link": "#"
+    },
+    {
+      "id": 5,
+      "title": "青龙2",
+      "ico": "https://s3.bmp.ovh/imgs/2021/08/ae0de7ea9013085e.png",
+      "w_link": "#",
+      "n_link": "#"
+    },
+    {
+      "id": 6,
+      "title": "开卡锦鲤",
+      "ico": "https://s3.bmp.ovh/imgs/2021/08/ae0de7ea9013085e.png",
+      "w_link": "#",
+      "n_link": "#"
+    },
+    {
+      "id": 7,
+      "title": "sillyGirl",
+      "ico": "https://s3.bmp.ovh/imgs/2021/12/1d2f078698439c92.jpg",
+      "w_link": "#",
+      "n_link": "#"
+    },
+    {
+      "id": 8,
+      "title": "anyproxy",
+      "ico": "https://s3.bmp.ovh/imgs/2022/01/9d769ecb0dd1c73b.png",
+      "w_link": "#",
+      "n_link": "#"
+    } 
+  ],
+ "Footer": [],
+  "FooterStyle": {
+    "Background": "img/bg.jpg",
+    "AColor": "#01809E"
+  }
+}
