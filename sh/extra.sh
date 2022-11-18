@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-## Mod: Build20210825V2
+## Mod: Build20221118V1
 ## 添加你需要重启自动执行的任意命令，比如 ql repo
-## 安装node依赖使用 pnpm install -g xxx xxx（Build 20210728-002 及以上版本的 code.sh，可忽略）
-## 安装python依赖使用 pip3 install xxx（Build 20210728-002 及以上版本的 code.sh，可忽略）
+## 安装node依赖使用 pnpm install -g xxx xxx
+## 安装python依赖使用 pip3 install xxx
 
 
 #------ 说明区 ------#
@@ -13,63 +13,58 @@
 ## 2. 安装依赖
 ### （1）默认不安装，因为 Build 20210728-002 及以上版本的 code.sh 自动检查修复依赖
 ### （2）若需要在此处使用，请在设置区设置
-## 3. Ninja
-### （1）默认启动并自动更新
-### （2）⚠未修改容器映射的请勿运行，否则会出现青龙打不开或者设备死机等不良后果，映射参考 https://github.com/MoonBegonia/ninja#%E5%AE%B9%E5%99%A8%E5%86%85
 
 
 #------ 设置区 ------#
-## 1. 拉取仓库编号设置，默认 shufflewzc 仓库
-CollectedRepo=() ##示例：CollectedRepo=(2 4 6)
-OtherRepo=() ##示例：OtherRepo=(1 3)
+## 1. 拉取仓库编号设置，默认 SnowTlsj 仓库
+CollectedRepo=() ##主仓库，示例：CollectedRepo=(2 4 6)
+OtherRepo=() ##其他仓库示例：OtherRepo=(1 3)
 ## 2. 是否安装依赖和安装依赖包的名称设置
 dependencies="yes" ##yes为安装，no为不安装
-package_name="canvas png-js date-fns axios crypto-js ts-md5 tslib @types/node dotenv typescript fs require tslib"
-## 3. Ninja 是否需要启动和更新设置
-Ninja="down" ##up为更新，on为启动，down为不运行
+package_name="png-js date-fns axios@v0.27.2 dotenv got crypto-js md5 ts-md5 tslib @types/node request tough-cookie jsdom download tunnel ws js-base64 qrcode-terminal moment ds"
 
 
 #------ 编号区 ------#
 :<<\EOF
 一、集成仓库（Collected Repositories)
-2-JDHelloWorld
-3-he1pu
-4-shufflewzc
-6-Aaron-lv
-7-yuannian1112
+2-SnowTlsj/RenXing
+3-SnowTlsj/Nomal
+4-KingRan/KR
+6-feverrun/my_scripts
+7-okyyds/yydspure
+8-锦鲤偷撸
 二、其他仓库（Other Repositories）
-1-passerby-b
-2-curtinlv
-3-smiek2221
-4-cdle
-5-ZCY01
-6-whyour/hundun
-7-moposmall
-8-Ariszy (Zhiyi-N)
-9-photonmang
-10-jiulan
-12-star261
-13-Wenmoux
-14-Tsukasa007
+1-SnowTlsj/Nomal-BBK
+2-环境开卡
+3-KR开卡
+4-青蛙开卡
+5-yyds开卡
+6-BBK
+7-兔子
+8-电信
+9-萝卜
 EOF
 
 
 #------ 代码区 ------#
 # 🌱拉取仓库
 CR2(){
-    ql repo https://github.com/JDHelloWorld/jd_scripts.git "jd_|jx_|getJDCookie" "activity|backUp|Coupon|enen|update|test" "^jd[^_]|USER|^TS|utils|notify|env|package|ken.js"
+    ql repo https://ghproxy.com/https://github.com/SnowTlsj/RenXing.git "jd_|pkc_|kanjia_|me_|a_|jdCookie.js" "" "^jd[^_]|USER|function|BBK|utils|ql|MR_util|sendNotify"
 }
 CR3(){
-    ql repo https://github.com/he1pu/JDHelp.git "jd_|jx_|getJDCookie" "Coupon|update" "^jd[^_]|USER|^sign|^ZooFaker|utils"
+    ql repo https://ghproxy.com/https://github.com/SnowTlsj/Nomal.git "jd_|jdCookie.js" "" "^jd[^_]|USER|function|BBK|utils|MR_util|sign_graphics_validate|ql|sendNotify"
 }
 CR4(){
-    ql repo https://ghproxy.com/https://github.com/shufflewzc/faker2.git
+    ql repo https://github.com/KingRan/KR.git "jd_|jx_|jdCookie" "activity|backUp" "^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR"
 }
 CR6(){
-    ql repo https://github.com/Aaron-lv/sync.git "jd_|jx_|getJDCookie" "activity|backUp|Coupon" "^jd[^_]|USER|utils" "jd_scripts"
+    ql repo https://github.com/feverrun/my_scripts.git "jd_|jx_|jddj_|getCookie|getJDCookie" "backUp/activity|backUp/card|backUp/py|backUp/utils/|backUp/test|jd_fruits.js|jd_pet.js|jd_factory.js|jd_health.js|jd_sgmh.js|jd_dreamFactory.js|jd_plantBean.js" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"
 }
 CR7(){
-    ql repo https://github.com/yuannian1112/jd_scripts.git "jd_|jx_|getJDCookie" "activity|backUp" "^jd[^_]|USER|utils"
+    ql repo https://github.com/okyyds/yyds.git "jd_|jx_|gua_|jddj_|m|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"
+}
+CR8(){
+    ql repo https://github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_|sign_graphics_validate|jddj_cookie|function|ql|magic|JDJR|JD|sendNotify" "main"
 }
 for i in ${CollectedRepo[@]}; do
     CR$i
@@ -77,46 +72,31 @@ for i in ${CollectedRepo[@]}; do
 done
 
 OR1(){
-    ql repo https://github.com/passerby-b/JDDJ.git "jddj_" "scf_test_event|jddj_fruit_code.js|jddj_getck.js|jd_|jddj_cookie"
+    ql repo https://ghproxy.com/https://github.com/SnowTlsj/Nomal.git "a_|jdCookie.js" "" "^jd[^_]|USER|function|BBK|utils|MR_util|sign_graphics_validate|ql|sendNotify"
 }
 OR2(){
-    ql repo https://github.com/curtinlv/JD-Script.git "jd_"
+    ql repo https://github.com/feverrun/my_scripts.git "jd_opencard|getCookie|getJDCookie" "backUp" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"
 }
 OR3(){
-    ql repo https://github.com/smiek2221/scripts.git "jd_|gua_" "" "^MovementFaker|^JDJRValidator|^ZooFaker|^sign"
+    ql repo https://github.com/KingRan/KR.git "jd_opencard|jdCookie" "activity|backUp" "^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR"
 }
 OR4(){
-    ql repo https://github.com/cdle/carry.git
+    ql repo https://github.com/smiek2121/scripts.git "jd_|gua_" "" "ZooFaker_Necklace.js|JDJRValidator_Pure.js|sign_graphics_validate.js|cleancart_activity.js|jdCookie.js|sendNotify.js"
 }
 OR5(){
-    ql repo https://github.com/ZCY01/daily_scripts.git "jd_"
+    ql repo https://github.com/okyyds/yyds.git "jd_lzdz|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"
 }
 OR6(){
-    ql repo https://github.com/whyour/hundun.git "quanx" "tokens|caiyun|didi|donate|fold|Env"
+    ql repo https://github.com/neUyNp8OIdO4Ejj/bbk_bak.git "a_" "NoUsed" "BBK" "master" "sh|bbk"
 }
 OR7(){
-    ql repo https://github.com/moposmall/Script.git "Me"
+    ql repo https://github.com/HT944/MR.git "jd_" "NoUsed" "MR_util|" "main" "py|so"
 }
 OR8(){
-    ql repo https://github.com/Ariszy/Private-Script.git "JD"
+    ql repo https://github.com/limoruirui/misaka.git "" "backUp|tools|JS|logs|login"  "tools|JS|logs|login"
 }
 OR9(){
-    ql repo https://github.com/photonmang/quantumultX.git "JDscripts"
-}
-OR10(){
-    ql repo https://github.com/jiulan/platypus.git "jd_|jx_" "" "overdue" "main"
-}
-OR11(){
-    ql repo https://github.com/panghu999/panghu.git "jd_"
-}
-OR12(){
-    ql repo https://github.com/star261/jd.git "jd_|star" "" "code" "main"
-}
-OR13(){
-    ql repo https://github.com/Wenmoux/scripts.git "other|jd" "" "" "wen"
-}
-OR14(){
-    ql repo https://github.com/Tsukasa007/my_script.git "jd_|jx_" "jdCookie|USER_AGENTS|sendNotify|backup" "" "master"
+    ql repo http://gitlab.radish.today/root/script.git "" "README" "sendNotify" "master"
 }
 for i in ${OtherRepo[@]}; do
     OR$i
@@ -124,48 +104,8 @@ for i in ${OtherRepo[@]}; do
 done
 
 
-# 🍪Ninja
-update_Ninja_normal(){
-    cd /ql/ninja/backend && git checkout . && git pull
-    pnpm install && pm2 start
-    cp sendNotify.js /ql/scripts/sendNotify.js
-}
 
-check_Ninja_normal(){
-    NOWTIME=$(date +%Y-%m-%d-%H-%M-%S)
-    i=0
-    while ((i<=0)); do
-        echo "扫描 Ninja 是否在线"
-        ps -fe|grep ninja|grep -v grep
-        if [ $? -ne 0 ]; then
-            i=0
-            echo $NOWTIME" 扫描结束！Ninja 掉线了不用担心马上重启！"
-            cd /ql
-            ps -ef|grep ninja|grep -v grep|awk '{print $1}'|xargs kill -9
-            cd /ql/ninja/backend
-            pnpm install
-            pm2 start
-            ps -fe|grep Daemon |grep -v grep 
-            if [ $? -ne 1 ]; then
-                i=1
-                echo $NOWTIME" Ninja 重启完成！"
-                curl "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage?chat_id=$TG_USER_ID&text=Ninja 已重启完成"
-            fi
-        else
-            i=1
-            echo $NOWTIME" 扫描结束！Ninja 还在！"
-        fi
-    done
-}
-
-if [ "$Ninja" = "up" ]; then
-    update_Ninja_normal &
-elif [ "$Ninja" = "on" ]; then
-    check_Ninja_normal
-fi
-
-
-# 📦依赖
+# 📦js依赖
 install_dependencies_normal(){
     for i in $@; do
         case $i in
@@ -236,9 +176,3 @@ if [ "$dependencies" = "yes" ]; then
     install_dependencies_all &
 fi
 
-cd /ql/ninja/backend
-git checkout .
-git pull
-pnpm install
-pm2 start
-cp sendNotify.js /ql/scripts/sendNotify.js
