@@ -1,0 +1,378 @@
+js_config:
+- Container:
+  - []
+  Env: jd_cjhy_activityId
+  KeyWord:
+  - - jd_cjhy_activityId
+  Name: 豆车
+  Script: SnowTlsj_RenXing/jd_cjzdgf
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_zdjr_activityId
+  KeyWord:
+  - - jd_zdjr_activityId
+  Name: zdjr
+  Script: SnowTlsj_RenXing/jd_zdjr.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_redrain_half_url
+  KeyWord:
+  - - jd_redrain_half_url
+  Name: 半点京豆雨
+  Script: SnowTlsj_RenXing/jd_redrain_half.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: DPQDTK
+  KeyWord:
+  - - DPQDTK
+  Name: 🛳店铺签到
+  Script: HarbourJ_HarbourToulu_main/jd_dpqd.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_nzmhurl
+  KeyWord:
+  - - jd_nzmhurl
+  Name: 女装盲盒
+  Script: SnowTlsj_RenXing/jd_nzmh.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxgame_activityId
+  KeyWord:
+  - - jd_wxgame_activityId
+  Name: 打豆豆
+  Script: SnowTlsj_RenXing/jd_wxgame.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wdz_activityId
+  KeyWord:
+  - - jd_wdz_activityId
+  Name: 微定制
+  Script: SnowTlsj_RenXing/jd_wdz.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_mhurlList
+  KeyWord:
+  - - jd_mhurlList
+  Name: 盲盒任务抽京豆
+  Script: SnowTlsj_RenXing/jd_mhtask.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: VENDER_ID
+  KeyWord:
+  - - VENDER_ID
+  Name: 入会开卡
+  Script: SnowTlsj_RenXing/jd_OpenCard_Force.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: DPLHTY
+  KeyWord:
+  - - DPLHTY
+  Name: 大牌通用开卡
+  Script: feverrun_my_scripts/jd_opencardDPLHTY.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: PKC_GZYL
+  KeyWord:
+  - - PKC_GZYL
+  Name: 皮卡车
+  Script: SnowTlsj_RenXing/pkc_gzyl.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxSecond_activityId
+  KeyWord:
+  - - jd_wxSecond_activityId
+  Name: 读秒拼手速
+  Script: SnowTlsj_RenXing/jd_wxSecond.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_fxyl_activityId
+  KeyWord:
+  - - jd_fxyl_activityId
+  Name: 分享有礼
+  Script: SnowTlsj_RenXing/jd_share.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: SEVENDAY_LIST
+  KeyWord:
+  - - SEVENDAY_LIST
+  Name: 🛳超级无线店铺签到
+  Script: HarbourJ_HarbourToulu_main/jd_sevenDay.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: JD_Lottery
+  KeyWord:
+  - - JD_Lottery
+  Name: 618个护
+  Script: SnowTlsj_RenXing/jd_lottery.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: JD_JOYOPEN
+  KeyWord:
+  - - JD_JOYOPEN
+  Name: joy通用开卡
+  Script: SnowTlsj_RenXing/jd_joyopen.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: SHARE_ACTIVITY_ID
+  KeyWord:
+  - - SHARE_ACTIVITY_ID
+  Name: 分享有礼share
+  Script: SnowTlsj_RenXing/jd_share2.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_drawCenter_activityId
+  KeyWord:
+  - - jd_drawCenter_activityId
+  Name: lz刮刮乐抽奖通用活动
+  Script: SnowTlsj_RenXing/jd_drawCenter.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxShopFollowActivity_activityUrl
+  KeyWord:
+  - - jd_wxShopFollowActivity_activityUrl
+  Name: LZ关注抽奖
+  Script: SnowTlsj_RenXing/jd_wxShopFollowActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxFansInterActionActivity_activityId
+  KeyWord:
+  - - jd_wxFansInterActionActivity_activityId
+  Name: 粉丝互动通用
+  Script: SnowTlsj_RenXing/jd_wxFansInterActionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_inv_authorCode
+  KeyWord:
+  - - jd_inv_authorCode
+  - - yhyauthorCode
+  Name: 🛳邀好友赢大礼
+  Script: HarbourJ_HarbourToulu_main/jd_inviteFriendsGift.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxUnPackingActivity_activityId
+  KeyWord:
+  - - jd_wxUnPackingActivity_activityId
+  Name: LZ让福袋飞
+  Script: SnowTlsj_RenXing/jd_wxUnPackingActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_lzaddCart_activityId
+  KeyWord:
+  - - jd_lzaddCart_activityId
+  Name: LZ加购有礼
+  Script: SnowTlsj_RenXing/jd_lzaddCart.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxCartKoi_activityId
+  KeyWord:
+  - - jd_wxCartKoi_activityId
+  Name: LZ购物车锦鲤
+  Script: SnowTlsj_RenXing/jd_wxCartKoi.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wdz_openLuckBag_activityId
+  KeyWord:
+  - - jd_wdz_openLuckBag_activityId
+  Name: 微定制福袋
+  Script: SnowTlsj_RenXing/jd_wdzfd.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: LUCK_DRAW_URL
+  KeyWord:
+  - - LUCK_DRAW_URL
+  Name: 幸运抽奖通用
+  Script: SnowTlsj_RenXing/jd_luck_draw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_FOLLOW_SHOP_ARGV
+  KeyWord:
+  - - M_FOLLOW_SHOP_ARGV
+  Name: 关注有礼
+  Script: SnowTlsj_RenXing/jd_follow.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jinggengInviteJoin
+  KeyWord:
+  - - jinggengInviteJoin
+  Name: 🛳京耕邀请入会有礼
+  Script: HarbourJ_HarbourToulu_main/jd_jinggengInvite.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxShareActivity_activityId
+  KeyWord:
+  - - jd_wxShareActivity_activityId
+  Name: 分享有礼
+  Script: SnowTlsj_RenXing/jd_wxShareActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxShopGiftId
+  KeyWord:
+  - - jd_wxShopGiftId
+  - - jd_wxShopGift_activityUrl
+  Name: 🛳皮卡车特效关注有礼
+  RegularRules: 'cjhy@[\d|a-z]{32}@0'
+  Script: HarbourJ_HarbourToulu_main/jd_wxShopGift.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxCollectionActivity_activityUrl
+  KeyWord:
+  - - jd_wxCollectionActivity_activityUrl
+  Name: 加购有礼 · 超级无线
+  Script: SnowTlsj_RenXing/jd_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxKnowledgeActivity_activityId
+  KeyWord:
+  - - jd_lzkj_wxKnowledgeActivity_activityId
+  - - jd_wxKnowledgeActivity_activityId
+  - - jd_wxKnowledgeActivity_activityUrl
+  Name: LZ知识超人通用活动
+  RegularRules: 'lzkj@[\d|a-z]{32}@0'
+  Script: SnowTlsj_RenXing/jd_wxKnowledgeActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_shopLeagueId
+  KeyWord:
+  - - jd_shopLeagueId
+  Name: 🛳通用开卡-shopLeague系列
+  Script: HarbourJ_HarbourToulu_main/jd_shopLeague_opencard.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxBirthGiftsId
+  KeyWord:
+  - - jd_wxBirthGiftsId
+  Name: 🛳生日礼包
+  Script: HarbourJ_HarbourToulu_main/jd_wxBirthGifts.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxCompleteInfoId
+  KeyWord:
+  - - jd_wxCompleteInfoId
+  - - jd_completeInfoActivity_activityId
+  Name: 🛳完善信息有礼
+  Script: HarbourJ_HarbourToulu_main/jd_wxCompleteInfo.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_joinCommonId
+  KeyWord:
+  - - jd_joinCommonId
+  Name: 🛳通用开卡-joinCommon系列脚本
+  Script: HarbourJ_HarbourToulu_main/jd_joinCommon_opencard.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxBuildActivity_activityId
+  KeyWord:
+  - - jd_wxBuildActivity_activityId
+  - - jd_lzkj_wxBuildActivity_activityId
+  Name: 盖楼有礼
+  Script: SnowTlsj_RenXing/jd_wxBuildActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxCollectionActivityUrl
+  KeyWord:
+  - - jd_wxCollectionActivityUrl
+  Name: 🛳加购有礼
+  Script: HarbourJ_HarbourToulu_main/jd_wxCollectionActivity.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_lottery_activityUrl
+  KeyWord:
+  - - jd_lottery_activityUrl
+  Name: 收藏大师-幸运抽奖
+  Script: SnowTlsj_RenXing/jd_txzj_lottery.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_shopFollowGiftId
+  KeyWord:
+  - - jd_shopFollowGiftId
+  Name: 🛳关注有礼-JK
+  Script: HarbourJ_HarbourToulu_main/jd_shopFollowGift.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: DPCJID
+  KeyWord:
+  - - DPCJID
+  Name: 🛳店铺抽奖-JK
+  Script: HarbourJ_HarbourToulu_main/jd_dpcj.py
+  TimeOut: 0
+  Wait: 2
